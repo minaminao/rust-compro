@@ -9,7 +9,7 @@
 bash new.sh URL
 ```
 
-## Install snippets.py
+## Install snippets
 ```
 python install_snippets.py
 ```
