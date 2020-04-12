@@ -19,9 +19,12 @@
             "label": "debug",
             "type": "shell",
             "command": "rustfmt ${relativeFile} && rustc ${relativeFile} -o a.out && ./a.out",
-            "group": {
-                "kind": "build",
-            }
+        },
+        {
+            "label": "yukicoder",
+            "type": "shell",
+            "command": "rustfmt ${relativeFile} && rustc ${relativeFile} -o a.out && rm -rf test && oj download https://yukicoder.me/problems/no/${fileBasenameNoExtension} && oj test",
+            //"command": "rustfmt ${relativeFile} && rustc ${relativeFile} -o a.out && rm -rf test && oj download https://yukicoder.me/problems/no/${fileBasenameNoExtension} && oj test && oj submit https://yukicoder.me/problems/no/${fileBasenameNoExtension} ${relativeFile}",
         },
     ]
 }

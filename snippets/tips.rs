@@ -49,7 +49,7 @@ fn main() {
         } else {
             "NO"
         }
-    )
+    );
 
     input! {
         n: usize,
@@ -67,4 +67,8 @@ fn main() {
         ans.push('\n');
     }
     print!("{}", ans);
+
+    // max min
+    v.into_iter().max().unwrap();
+    v.into_iter().min().unwrap();
 }
