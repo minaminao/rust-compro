@@ -38,6 +38,11 @@ macro_rules! input_inner {
         let $var = read_value!($next, $t);
         input_inner!{$next $($r)*}
     };
+
+    ($iter:expr, mut $var:ident : $t:tt $($r:tt)*) => {
+        let mut $var = read_value!($iter, $t);
+        input_inner!{$iter $($r)*}
+    };
 }
 
 #[allow(unused_macros)]
