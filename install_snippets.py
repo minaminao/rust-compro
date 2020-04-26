@@ -8,7 +8,7 @@ FILES = glob.glob(os.path.join(SNIPPETS_DIR, "*"))
 print(f"files: {FILES}")
 snippets_dict = dict()
 
-SCOPE = 'cpp'
+SCOPE = 'rust'
 
 for filepath in FILES:
     print(filepath)

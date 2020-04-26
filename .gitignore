@@ -12,3 +12,5 @@ Cargo.lock
 a.out
 
 test
+
+.vscode/snippet.code-snippets

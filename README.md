@@ -8,6 +8,7 @@
 ```
 bash new.sh URL
 ```
+Tip: `$ alias n="bash new.sh"`
 
 ## Install snippets
 ```
