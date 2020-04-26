@@ -1,6 +1,7 @@
 import glob
 import os
 import json
+import re
 
 SNIPPETS_DIR = "./snippets"
 
@@ -18,6 +19,7 @@ for filepath in FILES:
     prefix = filename.split('.')[0]
     with open(filepath, 'r') as snippet:
         body = snippet.read()
+        body = re.sub('(\$[A-Za-z])', '\\\\\\1', body)
 
     snippets_dict[filename] = dict()
     snippets_dict[filename]['prefix'] = prefix
