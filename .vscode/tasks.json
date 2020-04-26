@@ -26,5 +26,10 @@
             "command": "rustfmt ${relativeFile} && rustc -C opt-level=3 ${relativeFile} -o a.out && rm -rf test && oj download https://yukicoder.me/problems/no/${fileBasenameNoExtension} && oj test",
             //"command": "rustfmt ${relativeFile} && rustc ${relativeFile} -o a.out && rm -rf test && oj download https://yukicoder.me/problems/no/${fileBasenameNoExtension} && oj test && oj submit https://yukicoder.me/problems/no/${fileBasenameNoExtension} ${relativeFile}",
         },
+        {
+            "label": "codeforces",
+            "type": "shell",
+            "command": "rustfmt ${relativeFile} && rustc -C opt-level=3 ${relativeFile} -o a.out && rm -rf test",
+        },
     ]
 }
