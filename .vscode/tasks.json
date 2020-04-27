@@ -18,7 +18,7 @@
         {
             "label": "debug",
             "type": "shell",
-            "command": "rustfmt ${relativeFile} && rustc ${relativeFile} -o a.out && ./a.out",
+            "command": "rustfmt ${relativeFile} && rustc -C opt-level=3 ${relativeFile} -o a.out && ./a.out",
         },
         {
             "label": "yukicoder",

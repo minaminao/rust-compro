@@ -86,6 +86,7 @@ fn main() {
         let c = char::from(c);
         ans = Some(c.to_string());
     }
+    for i in (0..n).rev() {}
     println!("{}", ans.unwrap_or("None".to_string()));
 
     for (a, b) in v {}

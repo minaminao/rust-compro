@@ -12,11 +12,12 @@ snippets_dict = dict()
 SCOPE = 'rust'
 
 for filepath in FILES:
-    print(filepath)
     filename = filepath.split('/')[-1]
-    print(filename)
 
     prefix = filename.split('.')[0]
+    if prefix == "tips":
+        continue
+    print("path: f{filepath}, name: f{filename}")
     with open(filepath, 'r') as snippet:
         body = snippet.read()
         body = re.sub('(\$[A-Za-z])', '\\\\\\1', body)
