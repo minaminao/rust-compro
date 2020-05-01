@@ -1,5 +1,7 @@
 # rust-compro
 
+**This repository has been integrated with [minaminao/competitive-programming](https://github.com/minaminao/competitive-programming)**
+
 ## Online judges
 - AtCoder
 - Codeforces
